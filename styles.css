@@ -1,0 +1,76 @@
+*,::after,*::before{
+    box-sizing:border-box;
+    margin:0; 
+    padding:0;
+  }
+  body{
+    background-color:#3b3b4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0a0a23;
+  }
+  main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color: whitesmoke;
+    text-align:center;
+    font-size: max(100%,2.8rem)
+  }
+  article{
+    background-color:#0a0a23; 
+    margin: 50px 0;
+    width:min(20rem,100%);
+    border-radius:5%;
+    display: flex;
+    flex-flow: column nowrap;
+    place-items:center;
+  }
+  section.firstSec{
+    background-color: whitesmoke;
+    width:80%;
+    text-align: center;
+    padding-top:20px;
+  }
+  div.results-div{
+    margin:10px;
+    height:300px;
+    overflow-y:auto;
+  }
+  .circle{
+    background-color: whitesmoke;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    margin:20px 0 ;
+  }
+   input{
+     font-size:18.5px;
+     text-align: center;
+     padding:10px 0;
+     border-radius:20px/50px;
+     margin-top:20px;
+   }
+  
+   label{
+    font-size:20px;
+   }
+   button{
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    font-size: 18px;
+    background-image: linear-gradient(#ffffff, #928d86);
+    border-color: #ffffff;
+    border-width: 5px;
+   }
+  
+  .inputValue{
+    margin:40px 0;
+    font-size:23px;
+  }
+  @media  screen and (max-width:318px) {
+    body{min-width:50vh}
+  }
